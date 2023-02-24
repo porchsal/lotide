@@ -17,5 +17,5 @@ const head = function(array){
 }
 
 // TEST CODE
-assertEqual(head([]), 5);
+assertEqual(head([x]), 5);
 assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
