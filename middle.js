@@ -1,0 +1,41 @@
+const eqArrays = function(array1, array2) {
+  if (array1.length !== array2.length) {
+    return false;
+  }
+  for (let i = 0; i < array1.length; i++) {
+    if (array1[i] !== array2[i]) {
+      return false;
+    }
+  }
+  return true;
+};
+    
+const assertArraysEqual = function(array1, array2) {
+  if (eqArrays(array1, array2) === true) {
+    console.log(`Assertion Passed: [${array1}] === [${array2}]`);
+  } else {
+    console.log(`Assertion Failed: [${array1}] !== [${array2}]`);
+  }
+};
+
+const middle = function(array) {
+  var middle = [];
+  var mid = 0;
+    if (array.length <= 2){
+      return middle;
+    } else if (array.length > 2 && array.length % 2 === 0 ){
+        mid = array.length / 2;
+        middle.push(array[mid-1]);
+        middle.push(array[mid]);
+      return middle;  
+    } else if (array.length > 2 && array.length % 2 === 1){
+        mid = Math.trunc(array.length / 2);
+        middle.push(array[mid]);
+        return middle;
+    }
+
+}
+;
+console.log(middle([1,2,3,4]));
+console.log(middle([1,2,3,4,5]));
+console.log(middle([1,2]))
