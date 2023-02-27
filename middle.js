@@ -19,23 +19,23 @@ const assertArraysEqual = function(array1, array2) {
 };
 
 const middle = function(array) {
-  var middle = [];
-  var mid = 0;
-    if (array.length <= 2){
-      return middle;
-    } else if (array.length > 2 && array.length % 2 === 0 ){
-        mid = array.length / 2;
-        middle.push(array[mid-1]);
-        middle.push(array[mid]);
-      return middle;  
-    } else if (array.length > 2 && array.length % 2 === 1){
-        mid = Math.trunc(array.length / 2);
-        middle.push(array[mid]);
-        return middle;
-    }
+  let middle = [];
+  let mid = 0;
+  if (array.length <= 2) {
+    return middle;
+  } else if (array.length > 2 && array.length % 2 === 0) {
+    mid = array.length / 2;
+    middle.push(array[mid - 1]);
+    middle.push(array[mid]);
+    return middle;
+  } else if (array.length > 2 && array.length % 2 === 1) {
+    mid = Math.trunc(array.length / 2);
+    middle.push(array[mid]);
+    return middle;
+  }
 
 }
 ;
 console.log(middle([1,2,3,4]));
 console.log(middle([1,2,3,4,5]));
-console.log(middle([1,2]))
+console.log(middle([1,2]));
