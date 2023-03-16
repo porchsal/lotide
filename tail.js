@@ -11,5 +11,4 @@ const tail = function(array) {
   }
   return newarray;
 };
-
 module.exports = tail;
