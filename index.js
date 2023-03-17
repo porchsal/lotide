@@ -1,7 +1,7 @@
 //index.js
 
-const head   = require('./head');
-const tail   = require('./tail');
+const head = require('./head');
+const tail = require('./tail');
 const middle = require('./middle');
 const assertArraysEqual = require('./assertArraysEqual');
 const assertEqual = require('./assertEqual');
@@ -21,8 +21,8 @@ const flatten = require('./flatten');
 
 
 module.exports = {
-  head:   head,
-  tail:   tail,
+  head: head,
+  tail: tail,
   middle: middle,
   assertArraysEqual: assertArraysEqual,
   assertEqual: assertEqual,
@@ -38,6 +38,6 @@ module.exports = {
   map: map,
   reverse: reverse,
   takeUntil: takeUntil,
-  without: without
+  without
 
 };
