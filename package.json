@@ -2,7 +2,7 @@
   "name": "@porchsal/lotide",
   "version": "1.0.0",
   "description": "Library of functions created at Flex Web Lighthouse Labs",
-  "main": "assertArraysEqual.js",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
