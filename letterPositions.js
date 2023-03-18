@@ -1,4 +1,3 @@
-
 const letterPositions = function(sentence) {
   const result = {};
   let spaceless = sentence.replace(/\s/g,'');
