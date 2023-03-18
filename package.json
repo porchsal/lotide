@@ -1,6 +1,6 @@
 {
   "name": "@porchsal/lotide",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Library of functions created at Flex Web Lighthouse Labs",
   "main": "index.js",
   "directories": {
