@@ -1,5 +1,3 @@
-const assertEqual = require('./assertEqual');
-
 const countLetters = function(string) {
   let result = {};
   let spaceless = string.replace(/\s/g,'');
