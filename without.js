@@ -3,12 +3,9 @@ const without = function(source, itemsToRemove) {
   if (!itemsToRemove.length) {
     return source;
   }
-  //return itemsToRemove;
-  for (let i = 0; i < itemsToRemove.length; i++) {
-    for (let j = 0; j < source.length; j++) {
-      if (itemsToRemove[i] !== source[j]) {
-        newArray.push(source[j]);
-      }
+  for (let elements of source) {
+    if (!itemsToRemove.includes(elements)) {
+      newArray.push(elements);
     }
   }
   return newArray;
